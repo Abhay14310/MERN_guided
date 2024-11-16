@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div>
+        <h1 id="heading">Survey Form</h1><br>
+        <div id="form">
+            <form action="action.php">
+                <label for="username"> Name <br>
+                    <input type="text" name="username" class="input" id="username" placeholder="Enter your name">
+                </label><br><br>
+                <label for="Email"> Email <br>
+                    <input type="text" name="Email" id="Email" class="input"  placeholder="Enter your Email">
+                </label><br><br>
+                <label for="Age"> Age <br>
+                    <input type="text" name="Age" id="Age"  class="input" placeholder="Enter your age">
+                </label>
+<br><br>
+                <label for="profession">
+                            Which option best describes you ? <br>
+                    <select class="input" name="profession" id="who">
+                    <option value="student">student</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Mentor">Mentor</option>
+                </select><br>
+                </label>
+                <br>
+                
+                <label for="friend">
+                    Would you recommend GeeksforGeeks to a friend ? <br>
+                    <label for="yes">
+                        <input type="radio" name="answer" id="yes" style="margin-top: 10px ;">Yes
+                    </label><br>
+                    <label for="no">
+                        <input type="radio" name="answer" id="no">No
+                    </label><br>
+                    <label for="maybe">
+                        <input type="radio" name="answer" id="maybe">Maybe
+                    </label> <br>
+                    
+                    <label for="" id="Languages">  <br>
+                            Languages and Frameworks known (check all the reply) <br>
+                        </label> 
+                        <label for="c1">
+                            <input type="checkbox" name="choices" id="c1" class="choices" style="margin-top: 10px;">C <br>
+
+                        </label>
+                        <label for="c2">
+                            <input type="checkbox" name="choices" id="c2" class="choices">C++ <br>
+
+                        </label>
+                        <label for="c3">
+                            <input type="checkbox" name="choices" id="c3" class="choices">C# <br>
+
+                        </label>
+                        <label for="c4">
+                            <input type="checkbox" name="choices" id="c4" class="choices">Java <br>
+
+                        </label>
+                        <label for="c5">
+                            <input type="checkbox" name="choices" id="c5" class="choices">Python <br>
+
+                        </label>
+                        <label for="c6">
+                            <input type="checkbox" name="choices" id="c6" class="choices">Javascript <br>
+
+                        </label>
+                        <label for="c7">
+                            <input type="checkbox" name="choices" id="c7" class="choices">React <br>
+
+                        </label>
+                        <label for="c8">
+                            <input type="checkbox" name="choices" id="c8" class="choices">Angular <br>
+
+                        </label>
+                        <label for="c9">
+                            <input type="checkbox" name="choices" id="c9" class="choices">Django <br>
+
+                        </label>
+                        <label for="c0">
+
+                            <input type="checkbox" name="choices" id="c0" class="choices">Spring <br>
+                        </label>
+
+                </label>
+                <label for="comment">
+                    Any comments or suggestions <br>
+                    <textarea id="comment" style="width: 100%; margin-top: 10px; margin-bottom: 30px;" id=""></textarea>
+                </label>
+                <input type="submit" name="" id="submit"  value="submit" >
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
