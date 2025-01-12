@@ -20,3 +20,13 @@ alert(
     "\nDivision: " +
     division
 );
+// alert(
+//   `
+//   addition : ${addition}
+//   subtratcion : ${subtraction}
+//   multiplication : ${multiplication} 
+//   division : ${division}
+
+  
+//   `
+// );
