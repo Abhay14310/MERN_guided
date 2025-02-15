@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Integer Guess Game</title>
+</head>
+<body>
+    <h1>Guess the Number (1 to 10)</h1>
+    <p>Enter your guess below:</p>
+    <input type="number" id="guessInput" min="1" max="10">
+    <button onclick="checkGuess()">Submit Guess</button>
+    <p id="result"></p>
+
+    <script>
+        // Generate a random integer between 1 and 10
+        const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+        // Function to check the user's guess
+        function checkGuess() {
+            // Get the user's guess from the input field
+            const userGuess = parseInt(document.getElementById("guessInput").value);
+
+            // Get the result element
+            const resultElement = document.getElementById("result");
+
+            // Check if the guess matches the random number
+            if (userGuess === randomNumber) {
+                resultElement.textContent = "Good Work! You guessed correctly!";
+            } else {
+                resultElement.textContent = `Not matched. The correct number was ${randomNumber}.`;
+            }
+        }
+    </script>
+</body>
+</html>
