@@ -1,0 +1,46 @@
+<!-- // rotate string peridiocally -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate String Periodically</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #output {
+            font-size: 2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        // Function to rotate the string to the right by one character
+        function rotateString(str) {
+            return str[str.length - 1] + str.substring(0, str.length - 1);
+        }
+
+        // Initial string
+    let text = "Abhay";
+        const outputElement = document.getElementById("output");
+
+        // Function to update the displayed string
+        function updateString() {
+            text = rotateString(text); // Rotate the string
+            outputElement.textContent = text; // Update the DOM
+        }
+
+        // Rotate the string every 1000 milliseconds
+        setInterval(updateString, 1000);
+    </script>
+</body>
+</html>
